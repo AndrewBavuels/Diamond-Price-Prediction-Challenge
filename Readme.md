@@ -1,4 +1,4 @@
-# **Project Module 3 - Diamond Price Prediction Challenge💻🌐💶**
+# **Project Module 3 - Diamond Price Prediction Challenge 🔮💶💎**
 
 The main reason for this project is to apply **Machine Learning** techniques and data analysis in a real-world context, where diamond valuation is influenced by some factors; by developing an accurate and robust predictive model capable of estimating the price of diamonds based on a set of relevant features.
 
@@ -10,14 +10,22 @@ This competition has been created specifically in in [**Kaggle**](https://www.ka
 
  **The main challenge** was getting the lowest **RMSE** (Root Mean Squared Error) as the chosen evaluation metric.
 
- #### Functional architecture design:
+ ### Functional architecture design:
 
- 
- 
-- Baseline:
-- Preprocessing:
+![Pipeline Architecture Design](Pipeline%20Architecture.jpg)
+
+
+- Baseline & Preprocessing: 
+    - **LabelEncoding** for both datasets
+    - **Feature Engineering with correlation:** The most influencing feature was **Carat** towards the price, and columns=['x','y','z'] were dropped.
+    - **Robust Scaled** because is special for outliers, before fitting in the model.
+
+
+
 - Training:
-- Submission:
+    - **XGBoost with Cross Validation and Grid Search:** the hyperparameters were **XGBRegressor**(gamma=0.01, learning_rate=0.1, max_depth=6, n_estimators=200)
+
+- Submission: The lowest **RMSE** I reached was 546 **compared to** Kaggle's RMSE of 533.
 
 
 
@@ -54,54 +62,11 @@ This competition has been created specifically in in [**Kaggle**](https://www.ka
 - [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html): For hyperparameter tuning using cross-validated grid search.
 
 
-
-
-## **3. Minimal Functional App ⚙️**
-
-To know the purpose of our visualization, **first** we must know the audience we will present it to, in order to prepare our visualization and give the right message with the right words.
-
-For this case, I developed a fictional character for the **Profile Persona** named Lucia, which the visualization will allow her to **take decisions about** what skills should be trained for **and** what countries offers the best for her professional development.
-
-![Lucia](https://github.com/AndrewBavuels/ih_datamadpt0923_project_m2/raw/main/images/Lucia_Profile_Persona.png)
-
-With this **Profile Persona**, we can formulate possible questions the people (represented by Lucia) would ask. With the Dashboard (specially if is an static report), we could give answers to them.
-
-
-> **Note:** "Static" means if the dashboard is like an image.
-
-
-#### How does it work?
-From the **Profile Persona** I formulated the following question they need answer for:
-
-- What positions can I start with in the job market if my background is related to Sales?
-- What are the salaries of tech positions related to my career?
-- What options do I have to work, and at the same time maintain frequent contact with family and friends?
-- How can I immediately ensure my entry into the job market?
-- Should I look for work in Spain? In a nearby country? or Remote?
-
-**The following step was** to load the dataset in Tableau and perform my report/dashboard to communicate my insights, as you can see as follows:
-
-![Dashboard](https://github.com/AndrewBavuels/ih_datamadpt0923_project_m2/raw/main/images/BI%20Report-Dashboard.png)
-
-> The previous output is exported in Tableau Public.
-
-At a glance, the **insights** I could get from the Dashboard, based on Lucia's questions, are the following ones:
-
-- It starts with the area Data Analysis, according to her "quote" in the Profile Persona.
-
-- Data Analyst instead of Business Data Analyst, because the first one has 37 job records and more probability of getting a job. **Instead of the Business one role** with just 2 records and a lower salary average than the first one.
-
-- There’s the option to start immediately in Part-time and to take a course in her free time to enhance her skills.
-
-- Most of the Data Analyst roles are in Spain, which **she can afford to start with an In-person job** with an average salary around € 42,000 per year. 
-
 ## **4. Main conclusions 📁**
 
-With this report, Lucia made her decision of getting the tools and trainings to enhance her business and sales background to get an entry in the Tech Market as a Data Analyst.
+The competitions had its bright sight regarding a non-stop learning, because of the RMSE metric that drove us to master ML skills.
 
-What motivates her the most is staying in Spain because of the high probabilities to achive her goals, along with keeping on touch with family and friends.
 
-This is just the beginning of Lucia professional growth. For more details, [**click here**](https://public.tableau.com/views/Readme_mdProjectM2DataScience/1_Overview?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link) to interact with the dynamic dashboard.
 
 ###  **Contact info📧**
 For further information, reach me at andrew.bavuels@gmail.com
