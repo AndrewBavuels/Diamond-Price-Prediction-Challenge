@@ -1,12 +1,10 @@
-# **Project Module 3 - Diamond Price Prediction Challenge 🔮💶💎**
+# **Diamond Price Prediction Challenge 🔮💶💎**
 
 The main reason for this project is to apply **Machine Learning** techniques and data analysis in a real-world context, where diamond valuation is influenced by some factors; by developing an accurate and robust predictive model capable of estimating the price of diamonds based on a set of relevant features.
 
 
 ## 1. Project description 👇
-> Project Module 3 - Part time Sept 2023 - [Ironhack Madrid - Data Analytics Bootcamp](https://www.ironhack.com/es-en/data-analytics)
-
-This competition has been created specifically in in [**Kaggle**](https://www.kaggle.com/competitions/ihdatamadpt0923projectm3/overview)for the students of the Ironhack Data Analytics Bootcamp, providing an opportunity to apply Machine Learning concepts and master skills related to.
+This competition has been created specifically in [**Kaggle**](https://www.kaggle.com/competitions/ihdatamadpt0923projectm3/overview) for the students of the Ironhack Data Analytics Bootcamp, providing an opportunity to apply Machine Learning concepts and master skills related to.
 
  **The main challenge** was getting the lowest **RMSE** (Root Mean Squared Error) as the chosen evaluation metric.
 
@@ -64,7 +62,7 @@ This competition has been created specifically in in [**Kaggle**](https://www.ka
 
 ## **4. Main conclusions 📁**
 
-The competitions had its bright sight regarding a non-stop learning, because of the RMSE metric that drove us to master ML skills.
+The competitions had its bright sight regarding non-stop learning, because of the RMSE metric that drove us to master ML skills.
 
 
 
